@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <title>Responsive Registration Form</title>
+  </head>
+  <body>
+    <main>
+
+      <div class="headings">
+        <h1>
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great 
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+
+
+      <div class="regform">
+        <button class="top-btn">
+          <span>Try it free 7 days, </span>then <br />
+          $20/mo, thereafter
+        </button>
+        <form action="">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            autocomplete="none"
+            required
+          />
+          <span class="error" data-error="First Name cannot be blank"></span>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            autocomplete="none"
+            required
+          />
+          <span class="error" data-error="Last Name cannot be blank"></span>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Format: name@domain.com"
+            autocomplete="none"
+            required
+          />
+          <span
+            class="error"
+            data-error="Your email address should have @ included"
+          ></span>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 7 or more characters"
+            required
+          />
+          <span
+            class="error"
+            data-error="Password must be at least seven characters"
+          ></span>
+          <button class="action-btn">claim your free trial</button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <span> terms and services</span>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
